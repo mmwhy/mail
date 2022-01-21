@@ -1,0 +1,13 @@
+---
+ref: mail
+name : mail
+description :  E-Mail Actions/Sensors for StackStorm
+keywords:
+  - send_exchange_email
+  - messaging
+  - exchangelib
+version: 1.0.0
+python_versions:
+  - "3"
+author : mwhy, Inc.
+email : mwuhongying@163.com

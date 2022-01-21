@@ -1,0 +1,35 @@
+---
+name: send_exchange_mail
+runner_type: python-script
+description: send exchange mail to others.
+enabled: true
+entry_point: send_exchange_mail.py
+parameters:
+  userName:
+    type: string
+    description: The domain name of mail, for example "company\\function Code".
+    required: true
+  Server:
+    type: string
+    description: Mail server URL.
+    required: true
+  email:
+    type: string
+    description: Sender email(function email).
+    required: true
+  emailpw:
+    type: string
+    description: Sender email password(function email password).
+    required: true
+  to_list:
+    type: array
+    description: receivers email list,for example(xxxx@***.com) .
+    required: true
+  subject:
+    type: string
+    description: mail subject.
+    required: true
+  message:
+    type: string
+    description: email content.
+    required: true
