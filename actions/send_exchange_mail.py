@@ -11,7 +11,6 @@ class SendExchangeMailAction(Action):
     def run(self, userName,Server,email, emailpw, to_list, subject, message):
         try:
             credentials = Credentials(username=userName, password=emailpw)
-            # config = Configuration(server='outlook.office365.com', credentials=credentials)
             config = Configuration(server=Server, credentials=credentials)
             account = Account(primary_smtp_address=email, config=config,
                               autodiscover=False, access_type=DELEGATE)
